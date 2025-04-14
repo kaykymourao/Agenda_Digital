@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080';
+const API_URL = 'https://agendadigital-production-30e5.up.railway.app/';
 
 export const getClientes = async () => {
     try {
@@ -42,7 +42,7 @@ export const getClienteById = async (id) => {
 
 export const editarCliente = async (formData) => {
     try {
-        const response = await fetch(`http://localhost:8080/clientes/${formData.id}`, {
+        const response = await fetch(`https://agendadigital-production-30e5.up.railway.app/clientes/${formData.id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -62,7 +62,7 @@ export const editarCliente = async (formData) => {
 
 export const addContato = async (contato) => {
     try {
-        const response = await fetch(`http://localhost:8080/contatos/${contato.id}`, {
+        const response = await fetch(`https://agendadigital-production-30e5.up.railway.app/contatos/${contato.id}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -96,7 +96,7 @@ export const getContatoById = async (id) => {
 
 export const editarContato = async (contato) => {
     try {
-        const response = await fetch(`http://localhost:8080/contatos/contatos/${contato.id}`, {
+        const response = await fetch(`https://agendadigital-production-30e5.up.railway.app/contatos/contatos/${contato.id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -115,7 +115,7 @@ export const editarContato = async (contato) => {
 
 export const excluirCliente = async (id) => {
     try {
-        const response = await fetch(`http://localhost:8080/clientes/${id}`, {
+        const response = await fetch(`https://agendadigital-production-30e5.up.railway.app/clientes/${id}`, {
             method: "DELETE",
         });
         if (!response.ok) {
@@ -129,7 +129,7 @@ export const excluirCliente = async (id) => {
 
 export const excluirContato = async (id) => {
     try {
-        const response = await fetch(`http://localhost:8080/contatos/${id}`, {
+        const response = await fetch(`https://agendadigital-production-30e5.up.railway.app/contatos/${id}`, {
             method: "DELETE",
         });
         if (!response.ok) {
@@ -142,7 +142,7 @@ export const excluirContato = async (id) => {
 
 export const buscarClientes = async (termo) => {
     try {
-        const response = await fetch(`http://localhost:8080/clientes/buscar?termo=${termo}`);
+        const response = await fetch(`https://agendadigital-production-30e5.up.railway.app/clientes/buscar?termo=${termo}`);
         if (!response.ok) {
             throw new Error("Erro ao buscar clientes");
         }
