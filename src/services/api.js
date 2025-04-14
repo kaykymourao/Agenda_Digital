@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://agendadigital-production-30e5.up.railway.app/';
+const API_URL = 'https://agendadigital-production-30e5.up.railway.app';
 
 export const getClientes = async () => {
     try {
