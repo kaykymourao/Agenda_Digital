@@ -1,0 +1,9 @@
+api_clientes\demo\ContatoController.class
+api_clientes\demo\Cliente.class
+api_clientes\demo\ClienteRepository.class
+api_clientes\demo\Contato.class
+api_clientes\demo\ClienteController.class
+api_clientes\demo\CorsConfig.class
+api_clientes\demo\DemoApplication.class
+api_clientes\demo\ContatoRepository.class
+api_clientes\demo\CorsConfig$1.class
